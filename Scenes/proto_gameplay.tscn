@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b4shk1svtkgw7"]
+
+[node name="ProtoGameplay" type="Node2D" unique_id=1767757858]
+
+[node name="Label" type="Label" parent="." unique_id=80584856]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "APENAS UM TEXTO DE TESTE AQUI"

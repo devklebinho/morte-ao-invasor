@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://dolb8idiuqi30"]
+
+[ext_resource type="Script" uid="uid://cn5qbkc4bahth" path="res://Scripts/MainMenu.gd" id="1_28flt"]
+
+[node name="MainMenu" type="Node2D" unique_id=133359958]
+
+[node name="Title" type="Label" parent="." unique_id=1258612795]
+offset_left = 514.0
+offset_top = 137.0
+offset_right = 671.0
+offset_bottom = 160.0
+scale = Vector2(0.9784227, 0.94117564)
+text = "MORTE AO INVASOR"
+
+[node name="ButtonManager" type="Control" parent="." unique_id=583084044]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 63.0
+offset_top = 44.0
+offset_right = 98.0
+offset_bottom = 81.0
+script = ExtResource("1_28flt")
+
+[node name="Start" type="Button" parent="ButtonManager" unique_id=1011434973]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 161.0
+offset_right = 628.0
+offset_bottom = 222.0
+text = "Começar"
+
+[node name="Options" type="Button" parent="ButtonManager" unique_id=553680221]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 234.0
+offset_right = 625.0
+offset_bottom = 295.0
+text = "Opções"
+
+[node name="Credits" type="Button" parent="ButtonManager" unique_id=794751820]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 302.0
+offset_right = 628.0
+offset_bottom = 364.0
+text = "Créditos"
+
+[node name="Quit" type="Button" parent="ButtonManager" unique_id=1600616541]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 370.0
+offset_right = 626.0
+offset_bottom = 437.0
+text = "Sair do jogo"
+
+[connection signal="pressed" from="ButtonManager/Start" to="ButtonManager" method="_on_start_pressed"]
+[connection signal="pressed" from="ButtonManager/Options" to="ButtonManager" method="_on_options_pressed"]
+[connection signal="pressed" from="ButtonManager/Credits" to="ButtonManager" method="_on_credits_pressed"]
+[connection signal="pressed" from="ButtonManager/Quit" to="ButtonManager" method="_on_quit_pressed"]

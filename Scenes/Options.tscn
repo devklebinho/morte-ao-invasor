@@ -1,5 +1,21 @@
 [gd_scene format=3 uid="uid://rie22ym1yjou"]
 
+[ext_resource type="Script" uid="uid://ca5ora2n52wi8" path="res://Scenes/options.gd" id="1_qqnya"]
+[ext_resource type="AudioStream" uid="uid://cyhn78pp8ecml" path="res://Audio/falling-in-reverse-joseph-epitaph-records-youtube_zEgPKeDv.mp3" id="2_hg628"]
+[ext_resource type="Script" uid="uid://bv4r33ila3w2l" path="res://Scenes/audio_controle.gd" id="3_5hy3q"]
+[ext_resource type="Script" uid="uid://btipn8m1x561y" path="res://Scenes/check_button.gd" id="4_cbhj7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yf5fn"]
+bg_color = Color(0.2585664, 0.2585664, 0.25856635, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_3gngh"]
+color = Color(1, 1, 1, 1)
+thickness = 7
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_fcnqv"]
+color = Color(0.5981903, 0.23220992, 0.5125189, 1)
+thickness = 7
+
 [node name="Options" type="Control" unique_id=1069109257]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +23,79 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_qqnya")
+
+[node name="Opcoes" type="Panel" parent="." unique_id=1729113880]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -338.5
+offset_top = -234.5
+offset_right = 338.5
+offset_bottom = 234.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Opcoes" unique_id=1348604279]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -65.0
+offset_top = 0.5
+offset_right = 46.0
+offset_bottom = 44.5
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 31
+text = "Opções"
+
+[node name="Volta" type="Button" parent="Opcoes" unique_id=1128652739]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -102.0
+offset_top = -88.0
+offset_right = 102.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_yf5fn")
+text = "VOLTAR"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Opcoes" unique_id=1208823042]
+stream = ExtResource("2_hg628")
+autoplay = true
+
+[node name="AudioControle" type="HSlider" parent="Opcoes" unique_id=398663024]
+layout_mode = 0
+offset_left = 99.5
+offset_top = 48.5
+offset_right = 560.0
+offset_bottom = 168.0
+theme_override_styles/slider = SubResource("StyleBoxLine_3gngh")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_fcnqv")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_fcnqv")
+max_value = 1.0
+step = 0.05
+value = 1.0
+script = ExtResource("3_5hy3q")
+audio_bus_name = "Musica"
+
+[node name="CheckButton" type="CheckButton" parent="Opcoes" unique_id=971926048]
+layout_mode = 0
+offset_left = 133.5
+offset_top = 144.5
+offset_right = 534.0
+offset_bottom = 268.0
+theme_override_font_sizes/font_size = 22
+text = "Resolução "
+script = ExtResource("4_cbhj7")
+
+[connection signal="pressed" from="Opcoes/Volta" to="." method="_on_volta_opcoes_pressed"]
+[connection signal="value_changed" from="Opcoes/AudioControle" to="Opcoes/AudioControle" method="_on_value_changed"]
+[connection signal="toggled" from="Opcoes/CheckButton" to="Opcoes/CheckButton" method="_on_toggled"]

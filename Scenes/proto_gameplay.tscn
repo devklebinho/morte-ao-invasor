@@ -1,8 +1,28 @@
 [gd_scene format=3 uid="uid://b4shk1svtkgw7"]
 
+[ext_resource type="PackedScene" uid="uid://o4t4nd82ywg0" path="res://Scenes/templateroom.tscn" id="1_5tyts"]
+[ext_resource type="PackedScene" uid="uid://dolshfrf351mi" path="res://Prefabs/Player.tscn" id="2_j3k4l"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_j3k4l"]
+font_size = 82
+font_color = Color(0, 1, 0, 1)
+outline_size = 4
+outline_color = Color(1, 0, 0, 1)
+
 [node name="ProtoGameplay" type="Node2D" unique_id=1767757858]
 
+[node name="TemplateRoom" parent="." unique_id=1203619176 instance=ExtResource("1_5tyts")]
+
 [node name="Label" type="Label" parent="." unique_id=80584856]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "APENAS UM TEXTO DE TESTE AQUI"
+offset_left = 314.0
+offset_top = 6.0
+offset_right = 1665.0
+offset_bottom = 119.0
+text = "CENA DE TESTE..."
+label_settings = SubResource("LabelSettings_j3k4l")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CharacterBody2D" parent="." unique_id=1277322602 instance=ExtResource("2_j3k4l")]
+position = Vector2(527, 728)
+scale = Vector2(2, 2)

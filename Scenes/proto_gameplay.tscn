@@ -1,8 +1,19 @@
 [gd_scene format=3 uid="uid://b4shk1svtkgw7"]
 
+[ext_resource type="PackedScene" uid="uid://o4t4nd82ywg0" path="res://Scenes/sala.tscn" id="1_5tyts"]
+[ext_resource type="PackedScene" uid="uid://dolshfrf351mi" path="res://Prefabs/Player.tscn" id="2_j3k4l"]
+[ext_resource type="PackedScene" uid="uid://bodarsi28je2c" path="res://Scenes/cozinha.tscn" id="3_fbdid"]
+
 [node name="ProtoGameplay" type="Node2D" unique_id=1767757858]
 
-[node name="Label" type="Label" parent="." unique_id=80584856]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "APENAS UM TEXTO DE TESTE AQUI"
+[node name="TemplateRoom" parent="." unique_id=1203619176 instance=ExtResource("1_5tyts")]
+
+[node name="Cozinha" parent="." unique_id=525947825 instance=ExtResource("3_fbdid")]
+position = Vector2(-1934, 0)
+
+[node name="CharacterBody2D" parent="." unique_id=1277322602 instance=ExtResource("2_j3k4l")]
+position = Vector2(527, 728)
+scale = Vector2(2, 2)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=270095378]
+position = Vector2(963, 540)

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://o4t4nd82ywg0"]
+
+[ext_resource type="Texture2D" uid="uid://vat6jonh72u6" path="res://Arts/sala_cinza.png" id="1_d4ws3"]
+
+[node name="Sala" type="Node2D" unique_id=1203619176]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=977095981]
+texture = ExtResource("1_d4ws3")
+centered = false

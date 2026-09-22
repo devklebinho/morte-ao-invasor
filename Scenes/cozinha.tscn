@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bodarsi28je2c"]
+
+[ext_resource type="Texture2D" uid="uid://1a8kyb7db8kg" path="res://Arts/Cozinha_Cinza.png" id="1_3oghi"]
+
+[node name="Cozinha" type="Node2D" unique_id=525947825]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1951921825]
+texture = ExtResource("1_3oghi")
+centered = false

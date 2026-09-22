@@ -4,6 +4,7 @@
 [ext_resource type="AudioStream" uid="uid://cyhn78pp8ecml" path="res://Audio/falling-in-reverse-joseph-epitaph-records-youtube_zEgPKeDv.mp3" id="2_hg628"]
 [ext_resource type="Script" uid="uid://bv4r33ila3w2l" path="res://Scenes/audio_controle.gd" id="3_5hy3q"]
 [ext_resource type="Script" uid="uid://btipn8m1x561y" path="res://Scenes/check_button.gd" id="4_cbhj7"]
+[ext_resource type="Script" uid="uid://tddmq12cx8br" path="res://Scenes/controle_escala.gd" id="5_q4at1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yf5fn"]
 bg_color = Color(0.2585664, 0.2585664, 0.25856635, 1)
@@ -87,6 +88,7 @@ script = ExtResource("3_5hy3q")
 audio_bus_name = "Musica"
 
 [node name="CheckButton" type="CheckButton" parent="Opcoes" unique_id=971926048]
+visible = false
 layout_mode = 0
 offset_left = 133.5
 offset_top = 144.5
@@ -96,6 +98,27 @@ theme_override_font_sizes/font_size = 22
 text = "Resolução "
 script = ExtResource("4_cbhj7")
 
+[node name="ControleEscala" type="OptionButton" parent="Opcoes" unique_id=1256732962]
+layout_mode = 0
+offset_left = 92.5
+offset_top = 248.5
+offset_right = 577.0
+offset_bottom = 302.5
+selected = 0
+item_count = 5
+popup/item_0/text = "1920x1080"
+popup/item_0/id = 0
+popup/item_1/text = "1280x720"
+popup/item_1/id = 1
+popup/item_2/text = "1120x630"
+popup/item_2/id = 3
+popup/item_3/text = "800x450"
+popup/item_3/id = 3
+popup/item_4/text = "640x360"
+popup/item_4/id = 4
+script = ExtResource("5_q4at1")
+
 [connection signal="pressed" from="Opcoes/Volta" to="." method="_on_volta_opcoes_pressed"]
 [connection signal="value_changed" from="Opcoes/AudioControle" to="Opcoes/AudioControle" method="_on_value_changed"]
 [connection signal="toggled" from="Opcoes/CheckButton" to="Opcoes/CheckButton" method="_on_toggled"]
+[connection signal="item_selected" from="Opcoes/ControleEscala" to="Opcoes/ControleEscala" method="_on_item_selected"]

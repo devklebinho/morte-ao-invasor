@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://rie22ym1yjou"]
 
-[ext_resource type="Script" uid="uid://ca5ora2n52wi8" path="res://Scenes/options.gd" id="1_qqnya"]
+[ext_resource type="Script" uid="uid://ca5ora2n52wi8" path="res://Scripts/options.gd" id="1_qqnya"]
 [ext_resource type="AudioStream" uid="uid://cyhn78pp8ecml" path="res://Audio/falling-in-reverse-joseph-epitaph-records-youtube_zEgPKeDv.mp3" id="2_hg628"]
 [ext_resource type="Script" uid="uid://bv4r33ila3w2l" path="res://Scenes/audio_controle.gd" id="3_5hy3q"]
 [ext_resource type="Script" uid="uid://btipn8m1x561y" path="res://Scenes/check_button.gd" id="4_cbhj7"]
@@ -95,7 +95,7 @@ offset_top = 144.5
 offset_right = 534.0
 offset_bottom = 268.0
 theme_override_font_sizes/font_size = 22
-text = "Resolução "
+text = "Tela Cheia"
 script = ExtResource("4_cbhj7")
 
 [node name="ControleEscala" type="OptionButton" parent="Opcoes" unique_id=1256732962]

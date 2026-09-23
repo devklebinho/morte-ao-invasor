@@ -1,19 +1,50 @@
 [gd_scene format=3 uid="uid://b4shk1svtkgw7"]
 
 [ext_resource type="PackedScene" uid="uid://o4t4nd82ywg0" path="res://Scenes/sala.tscn" id="1_5tyts"]
+[ext_resource type="Script" uid="uid://dgdd1c5vbx6hq" path="res://Scripts/Porta.gd" id="1_xdrvn"]
 [ext_resource type="PackedScene" uid="uid://dolshfrf351mi" path="res://Prefabs/Player.tscn" id="2_j3k4l"]
 [ext_resource type="PackedScene" uid="uid://bodarsi28je2c" path="res://Scenes/cozinha.tscn" id="3_fbdid"]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p41tx"]
+radius = 61.0
+height = 606.0
+
 [node name="ProtoGameplay" type="Node2D" unique_id=1767757858]
 
-[node name="TemplateRoom" parent="." unique_id=1203619176 instance=ExtResource("1_5tyts")]
+[node name="Sala" parent="." unique_id=1203619176 instance=ExtResource("1_5tyts")]
 
 [node name="Cozinha" parent="." unique_id=525947825 instance=ExtResource("3_fbdid")]
 position = Vector2(-1934, 0)
 
-[node name="CharacterBody2D" parent="." unique_id=1277322602 instance=ExtResource("2_j3k4l")]
-position = Vector2(527, 728)
+[node name="Player" parent="." unique_id=1277322602 groups=["Player"] instance=ExtResource("2_j3k4l")]
+position = Vector2(401, 809)
 scale = Vector2(2, 2)
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=270095378]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=270095378 groups=["CameraGlobal"]]
 position = Vector2(963, 540)
+
+[node name="SpawnRightKitchen" type="Marker2D" parent="." unique_id=540783315]
+position = Vector2(-354, 930)
+scale = Vector2(2, 2)
+
+[node name="SpawnLeftKitchen" type="Marker2D" parent="." unique_id=516955157]
+position = Vector2(-1640, 927)
+scale = Vector2(2, 2)
+
+[node name="MarkerCamKitchen" type="Marker2D" parent="." unique_id=1663542205]
+position = Vector2(-960, 540)
+
+[node name="SpawnLeftRoom" type="Marker2D" parent="." unique_id=506501146]
+position = Vector2(287, 927)
+scale = Vector2(2, 2)
+
+[node name="LeftDoorRoom" type="Area2D" parent="." unique_id=747200963 node_paths=PackedStringArray("pos_destino_player", "pos_destino_cam")]
+position = Vector2(141, 678)
+script = ExtResource("1_xdrvn")
+pos_destino_player = NodePath("../SpawnRightKitchen")
+pos_destino_cam = NodePath("../MarkerCamKitchen")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftDoorRoom" unique_id=1623928144]
+shape = SubResource("CapsuleShape2D_p41tx")
+
+[connection signal="body_entered" from="LeftDoorRoom" to="LeftDoorRoom" method="_on_body_entered"]

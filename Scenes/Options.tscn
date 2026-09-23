@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://ca5ora2n52wi8" path="res://Scripts/options.gd" id="1_qqnya"]
 [ext_resource type="AudioStream" uid="uid://cyhn78pp8ecml" path="res://Audio/falling-in-reverse-joseph-epitaph-records-youtube_zEgPKeDv.mp3" id="2_hg628"]
-[ext_resource type="Script" uid="uid://bv4r33ila3w2l" path="res://Scenes/audio_controle.gd" id="3_5hy3q"]
-[ext_resource type="Script" uid="uid://btipn8m1x561y" path="res://Scenes/check_button.gd" id="4_cbhj7"]
+[ext_resource type="Script" uid="uid://bv4r33ila3w2l" path="res://Scripts/audio_controle.gd" id="3_5hy3q"]
+[ext_resource type="Script" uid="uid://btipn8m1x561y" path="res://Scripts/check_button.gd" id="4_cbhj7"]
 [ext_resource type="Script" uid="uid://tddmq12cx8br" path="res://Scenes/controle_escala.gd" id="5_q4at1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yf5fn"]
@@ -88,7 +88,6 @@ script = ExtResource("3_5hy3q")
 audio_bus_name = "Musica"
 
 [node name="CheckButton" type="CheckButton" parent="Opcoes" unique_id=971926048]
-visible = false
 layout_mode = 0
 offset_left = 133.5
 offset_top = 144.5

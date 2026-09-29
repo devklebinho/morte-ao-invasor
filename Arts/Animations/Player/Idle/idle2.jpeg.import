@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vat6jonh72u6"
-path="res://.godot/imported/sala_cinza.png-7ed46d0fffd480473e58db3234895454.ctex"
+uid="uid://d2exwn7xavbkl"
+path="res://.godot/imported/idle2.jpeg-ec9472d95c8c31769bb8784e582883e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arts/sala_cinza.png"
-dest_files=["res://.godot/imported/sala_cinza.png-7ed46d0fffd480473e58db3234895454.ctex"]
+source_file="res://Arts/Animations/Player/Idle/idle2.jpeg"
+dest_files=["res://.godot/imported/idle2.jpeg-ec9472d95c8c31769bb8784e582883e3.ctex"]
 
 [params]
 

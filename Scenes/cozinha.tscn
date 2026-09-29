@@ -2,6 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://c7h51raegvetx" path="res://Arts/Environments/bgcozinha.png" id="1_b1q5v"]
 [ext_resource type="Texture2D" uid="uid://uptaacohg14s" path="res://Arts/Environments/cozinha.png" id="2_tl1eq"]
+[ext_resource type="Script" uid="uid://dgdd1c5vbx6hq" path="res://Scripts/Porta.gd" id="3_tl1eq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kvujk"]
+radius = 63.0
+height = 596.0
 
 [node name="Cozinha" type="Node2D" unique_id=525947825]
 
@@ -12,3 +17,18 @@ centered = false
 [node name="Cozinha" type="Sprite2D" parent="." unique_id=1603029511]
 texture = ExtResource("2_tl1eq")
 centered = false
+
+[node name="PortaDireita" type="Area2D" parent="." unique_id=920615080]
+script = ExtResource("3_tl1eq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PortaDireita" unique_id=1829225217]
+position = Vector2(1816, 624)
+shape = SubResource("CapsuleShape2D_kvujk")
+
+[node name="PortaEsquerda" type="Area2D" parent="." unique_id=1678937554]
+position = Vector2(-1685, 19)
+script = ExtResource("3_tl1eq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PortaEsquerda" unique_id=992701006]
+position = Vector2(1816, 624)
+shape = SubResource("CapsuleShape2D_kvujk")

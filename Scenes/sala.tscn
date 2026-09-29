@@ -2,6 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://dxbsoypd5cp2i" path="res://Arts/Environments/bgsala.png" id="1_35tbc"]
 [ext_resource type="Texture2D" uid="uid://dcrbdmngqa3nd" path="res://Arts/Environments/salamoveis-removebg-preview.png" id="2_2x4t4"]
+[ext_resource type="Script" uid="uid://dgdd1c5vbx6hq" path="res://Scripts/Porta.gd" id="3_vbwy0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uhgjh"]
+radius = 61.0
+height = 606.0
 
 [node name="Sala" type="Node2D" unique_id=1203619176]
 
@@ -13,3 +18,14 @@ centered = false
 position = Vector2(962, 546)
 scale = Vector2(2.8913329, 2.8913333)
 texture = ExtResource("2_2x4t4")
+
+[node name="LeftDoorRoom" type="Area2D" parent="." unique_id=756229302]
+position = Vector2(141, 678)
+script = ExtResource("3_vbwy0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftDoorRoom" unique_id=1682249149]
+shape = SubResource("CapsuleShape2D_uhgjh")
+
+[node name="SpawnLeftRoom" type="Marker2D" parent="." unique_id=660141817]
+position = Vector2(287, 927)
+scale = Vector2(2, 2)

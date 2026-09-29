@@ -2,48 +2,45 @@
 
 [ext_resource type="PackedScene" uid="uid://o4t4nd82ywg0" path="res://Scenes/sala.tscn" id="1_kwrm5"]
 [ext_resource type="PackedScene" uid="uid://bodarsi28je2c" path="res://Scenes/cozinha.tscn" id="2_r8bcl"]
-[ext_resource type="Script" uid="uid://dgdd1c5vbx6hq" path="res://Scripts/Porta.gd" id="4_1qnfl"]
 [ext_resource type="PackedScene" uid="uid://6u8xrn7rh342" path="res://Prefabs/bodytest.tscn" id="4_kwrm5"]
 [ext_resource type="Script" uid="uid://bkch63badicg4" path="res://Scripts/bodytest.gd" id="5_r8bcl"]
+[ext_resource type="Script" uid="uid://batr08dasmn32" path="res://Scripts/camera_manager.gd" id="6_rlidi"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p41tx"]
-radius = 61.0
-height = 606.0
+[node name="GameTESTE" type="Node2D" unique_id=1767757858]
 
-[node name="ProtoGameplay" type="Node2D" unique_id=1767757858]
+[node name="Managers" type="Node" parent="." unique_id=1279019062]
+
+[node name="CameraManager" type="Node" parent="Managers" unique_id=1836633031]
+script = ExtResource("6_rlidi")
+
+[node name="Cameras" type="Node" parent="." unique_id=1702469227]
+
+[node name="TransitionCamera2D" type="Camera2D" parent="Cameras" unique_id=815506617]
+position = Vector2(-18, 534)
+
+[node name="Camera2DSala" type="Camera2D" parent="Cameras" unique_id=270095378]
+position = Vector2(963, 540)
+
+[node name="Camera2DCozinha" type="Camera2D" parent="Cameras" unique_id=841828081]
+position = Vector2(-970, 537)
 
 [node name="Sala" parent="." unique_id=1203619176 instance=ExtResource("1_kwrm5")]
+
+[node name="SpawnLeftRoom" type="Marker2D" parent="Sala" unique_id=506501146]
+position = Vector2(287, 927)
+scale = Vector2(2, 2)
 
 [node name="Cozinha" parent="." unique_id=525947825 instance=ExtResource("2_r8bcl")]
 position = Vector2(-1934, 0)
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=270095378 groups=["CameraGlobal"]]
-position = Vector2(963, 540)
-
-[node name="SpawnRightKitchen" type="Marker2D" parent="." unique_id=540783315]
-position = Vector2(-354, 930)
+[node name="SpawnRightKitchen" type="Marker2D" parent="Cozinha" unique_id=540783315]
+position = Vector2(1580, 930)
 scale = Vector2(2, 2)
 
-[node name="SpawnLeftKitchen" type="Marker2D" parent="." unique_id=516955157]
-position = Vector2(-1640, 927)
+[node name="SpawnLeftKitchen" type="Marker2D" parent="Cozinha" unique_id=516955157]
+position = Vector2(294, 927)
 scale = Vector2(2, 2)
-
-[node name="MarkerCamKitchen" type="Marker2D" parent="." unique_id=1663542205]
-position = Vector2(-960, 540)
-
-[node name="SpawnLeftRoom" type="Marker2D" parent="." unique_id=506501146]
-position = Vector2(287, 927)
-scale = Vector2(2, 2)
-
-[node name="LeftDoorRoom" type="Area2D" parent="." unique_id=747200963]
-position = Vector2(141, 678)
-script = ExtResource("4_1qnfl")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftDoorRoom" unique_id=1623928144]
-shape = SubResource("CapsuleShape2D_p41tx")
 
 [node name="body_test" parent="." unique_id=901089597 instance=ExtResource("4_kwrm5")]
 position = Vector2(364, 759)
 script = ExtResource("5_r8bcl")
-
-[connection signal="body_entered" from="LeftDoorRoom" to="LeftDoorRoom" method="_on_body_entered"]

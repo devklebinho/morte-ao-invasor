@@ -19,16 +19,19 @@ texture = ExtResource("2_tl1eq")
 centered = false
 
 [node name="PortaDireita" type="Area2D" parent="." unique_id=920615080]
+position = Vector2(1800, 648)
 script = ExtResource("3_tl1eq")
+target_camera_name = "Camera2DSala"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PortaDireita" unique_id=1829225217]
-position = Vector2(1816, 624)
 shape = SubResource("CapsuleShape2D_kvujk")
 
 [node name="PortaEsquerda" type="Area2D" parent="." unique_id=1678937554]
-position = Vector2(-1685, 19)
+position = Vector2(131, 668)
 script = ExtResource("3_tl1eq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PortaEsquerda" unique_id=992701006]
-position = Vector2(1816, 624)
 shape = SubResource("CapsuleShape2D_kvujk")
+
+[connection signal="body_entered" from="PortaDireita" to="PortaDireita" method="_on_body_entered"]
+[connection signal="body_entered" from="PortaEsquerda" to="PortaEsquerda" method="_on_body_entered"]

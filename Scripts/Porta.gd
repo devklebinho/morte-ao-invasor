@@ -6,7 +6,7 @@ extends Area2D
 
 # Qual câmera esta porta deve ativar? 
 # Mude isso no Inspetor para cada porta que você criar.
-@export var target_camera_name: String = "Camera2DCozinha" 
+@export var target_camera_name: String = "TemplateName" 
 
 func _on_body_entered(body: Node2D) -> void:
 	# Verifica se o corpo que entrou é o Player

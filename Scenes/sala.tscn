@@ -23,12 +23,9 @@ texture = ExtResource("2_2x4t4")
 position = Vector2(141, 678)
 script = ExtResource("3_vbwy0")
 target_camera_name = "Camera2DCozinha"
+target_room_name = "CozinhaR"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PortaEsquerda" unique_id=1682249149]
 shape = SubResource("CapsuleShape2D_uhgjh")
-
-[node name="SpawnLeftRoom" type="Marker2D" parent="." unique_id=660141817]
-position = Vector2(287, 927)
-scale = Vector2(2, 2)
 
 [connection signal="body_entered" from="PortaEsquerda" to="PortaEsquerda" method="_on_body_entered"]

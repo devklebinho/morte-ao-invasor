@@ -22,20 +22,26 @@ position = Vector2(-18, 534)
 position = Vector2(963, 540)
 
 [node name="Camera2DCozinha" type="Camera2D" parent="Cameras" unique_id=841828081]
-position = Vector2(-970, 537)
+position = Vector2(-964, 537)
 
 [node name="Sala" parent="." unique_id=1203619176 instance=ExtResource("1_kwrm5")]
 
+[node name="LRoomSP" type="Marker2D" parent="Sala" unique_id=186209176]
+position = Vector2(332, 737)
+scale = Vector2(2, 2)
+
+[node name="RRoomSP" type="Marker2D" parent="Sala" unique_id=1766911257]
+position = Vector2(1654, 713)
+scale = Vector2(2, 2)
+
 [node name="Cozinha" parent="." unique_id=525947825 instance=ExtResource("2_r8bcl")]
-position = Vector2(-1934, 0)
+position = Vector2(-1915, 0)
 
-[node name="SpawnRightKitchen" type="Marker2D" parent="Cozinha" unique_id=540783315]
-position = Vector2(1580, 930)
-scale = Vector2(2, 2)
+[node name="RKitchenSP" type="Marker2D" parent="Cozinha" unique_id=1158672417]
+position = Vector2(1606, 738)
 
-[node name="SpawnLeftKitchen" type="Marker2D" parent="Cozinha" unique_id=516955157]
-position = Vector2(294, 927)
-scale = Vector2(2, 2)
+[node name="LKitchenSP" type="Marker2D" parent="Cozinha" unique_id=2034609296]
+position = Vector2(305, 738)
 
 [node name="body_test" parent="." unique_id=901089597 instance=ExtResource("4_kwrm5")]
 position = Vector2(364, 759)

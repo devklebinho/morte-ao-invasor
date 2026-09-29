@@ -22,6 +22,7 @@ centered = false
 position = Vector2(1800, 648)
 script = ExtResource("3_tl1eq")
 target_camera_name = "Camera2DSala"
+target_room_name = "SalaL"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PortaDireita" unique_id=1829225217]
 shape = SubResource("CapsuleShape2D_kvujk")

@@ -31,7 +31,7 @@ func _on_body_entered(body: Node2D) -> void:
 	if not body.is_in_group("Player"):
 		return # Se não for o Player, ignora e sai da função
 	
-	print("Player entrou na porta. Destino: Sala=", target_room_name, " | Câmera=", target_camera_name)
+	#print("Player entrou na porta. Destino: Sala=", target_room_name, " | Câmera=", target_camera_name)
 	
 	# Verifica se o CameraManager foi encontrado
 	if not camera_manager:

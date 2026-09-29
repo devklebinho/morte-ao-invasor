@@ -79,7 +79,7 @@ func transition_to_room(camera_name: String, room_name: String, player: Node2D) 
 	
 	var spawn_point: Node2D = spawn_points[room_name]
 	player.global_position = spawn_point.global_position
-	print("Player teletransportado para: ", room_name)
+	#print("Player teletransportado para: ", room_name)
 
 
 # ============================================================

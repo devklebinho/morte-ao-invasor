@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://d03grei7sbkta"]
+
+[ext_resource type="Texture2D" uid="uid://dy12o7vyg7maf" path="res://Arts/Environments/quintal_dia.png" id="1_02b53"]
+[ext_resource type="Script" uid="uid://dgdd1c5vbx6hq" path="res://Scripts/Porta.gd" id="2_wxhsf"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kvujk"]
+radius = 63.0
+height = 576.0
+
+[node name="Quintal" type="Node2D" unique_id=1600706536]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=653091623]
+texture = ExtResource("1_02b53")
+centered = false
+
+[node name="PortaDireita" type="Area2D" parent="." unique_id=1173464628]
+script = ExtResource("2_wxhsf")
+target_camera_name = "Camera2DCozinha"
+target_room_name = "CozinhaL"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PortaDireita" unique_id=1642410448]
+position = Vector2(1789, 643)
+shape = SubResource("CapsuleShape2D_kvujk")
+
+[connection signal="body_entered" from="PortaDireita" to="PortaDireita" method="_on_body_entered"]

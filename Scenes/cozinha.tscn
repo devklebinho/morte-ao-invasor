@@ -30,6 +30,8 @@ shape = SubResource("CapsuleShape2D_kvujk")
 [node name="PortaEsquerda" type="Area2D" parent="." unique_id=1678937554]
 position = Vector2(131, 668)
 script = ExtResource("3_tl1eq")
+target_camera_name = "Camera2DQuintal"
+target_room_name = "QuintalR"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PortaEsquerda" unique_id=992701006]
 shape = SubResource("CapsuleShape2D_kvujk")

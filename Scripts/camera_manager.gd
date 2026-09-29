@@ -16,15 +16,17 @@ extends Node
 # Use "Arrastar e Soltar" para preencher os caminhos corretamente.
 @onready var cameras = {
 	"Camera2DSala": $"../../Cameras/Camera2DSala",
-	"Camera2DCozinha": $"../../Cameras/Camera2DCozinha"
+	"Camera2DCozinha": $"../../Cameras/Camera2DCozinha",
+	"Camera2DQuintal": $"../../Cameras/Camera2DQuintal"
 }
 
 # Mapeia NOME da sala -> NÓ do ponto de spawn (Marker2D).
 # IMPORTANTE: As chaves daqui devem ser iguais às do "target_room_name" das portas!
 @onready var spawn_points = {
-	"SalaL": $"../../Sala/LRoomSP",           # Caminho: sobe 1 nível (..), entra em Sala, pega LRoomSP
-	"CozinhaR": $"../../Cozinha/RKitchenSP", # Caminho: sobe 1 nível (..), entra em Cozinha, pega RKitchenSP
-	"CozinhaL": $"../../Cozinha/LKitchenSP" # Caminho: sobe 1 nível (..), entra em Cozinha, pega LKitchenSP
+	"SalaL": $"../../Sala/LRoomSP",
+	"CozinhaR": $"../../Cozinha/RKitchenSP", 
+	"CozinhaL": $"../../Cozinha/LKitchenSP",
+	"QuintalR": $"../../Quintal/ROutsideSP"
 }
 
 

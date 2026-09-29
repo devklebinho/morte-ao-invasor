@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bodarsi28je2c" path="res://Scenes/cozinha.tscn" id="2_r8bcl"]
 [ext_resource type="PackedScene" uid="uid://6u8xrn7rh342" path="res://Prefabs/bodytest.tscn" id="4_kwrm5"]
 [ext_resource type="Script" uid="uid://bkch63badicg4" path="res://Scripts/bodytest.gd" id="5_r8bcl"]
+[ext_resource type="PackedScene" uid="uid://d03grei7sbkta" path="res://Scenes/quintal.tscn" id="6_1qnfl"]
 [ext_resource type="Script" uid="uid://batr08dasmn32" path="res://Scripts/camera_manager.gd" id="6_rlidi"]
 
 [node name="GameTESTE" type="Node2D" unique_id=1767757858]
@@ -24,6 +25,9 @@ position = Vector2(963, 540)
 [node name="Camera2DCozinha" type="Camera2D" parent="Cameras" unique_id=841828081]
 position = Vector2(-964, 537)
 
+[node name="Camera2DQuintal" type="Camera2D" parent="Cameras" unique_id=1705180037]
+position = Vector2(-2871, 535)
+
 [node name="Sala" parent="." unique_id=1203619176 instance=ExtResource("1_kwrm5")]
 
 [node name="LRoomSP" type="Marker2D" parent="Sala" unique_id=186209176]
@@ -42,6 +46,12 @@ position = Vector2(1606, 738)
 
 [node name="LKitchenSP" type="Marker2D" parent="Cozinha" unique_id=2034609296]
 position = Vector2(305, 738)
+
+[node name="Quintal" parent="." unique_id=1600706536 instance=ExtResource("6_1qnfl")]
+position = Vector2(-3832, -3)
+
+[node name="ROutsideSP" type="Marker2D" parent="Quintal" unique_id=1522533888]
+position = Vector2(1564, 737)
 
 [node name="body_test" parent="." unique_id=901089597 instance=ExtResource("4_kwrm5")]
 position = Vector2(364, 759)

@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dxbsoypd5cp2i" path="res://Arts/Environments/bgsala.png" id="1_35tbc"]
 [ext_resource type="Texture2D" uid="uid://dcrbdmngqa3nd" path="res://Arts/Environments/salamoveis-removebg-preview.png" id="2_2x4t4"]
-[ext_resource type="Script" uid="uid://dgdd1c5vbx6hq" path="res://Scripts/Porta.gd" id="3_vbwy0"]
+[ext_resource type="Script" uid="uid://dgdd1c5vbx6hq" path="res://Scripts/Game/Porta.gd" id="3_vbwy0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uhgjh"]
 radius = 61.0

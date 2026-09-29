@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bcq6ft2884bi7"]
 
 [ext_resource type="Texture2D" uid="uid://ctru0h4l0d5tb" path="res://Arts/Props/martelo.png" id="1_ujkf8"]
-[ext_resource type="Script" uid="uid://db17tp32fr7xh" path="res://Scripts/Interactable.gd" id="2_0dvby"]
+[ext_resource type="Script" uid="uid://db17tp32fr7xh" path="res://Scripts/Game/Interactable.gd" id="2_0dvby"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kvujk"]
 size = Vector2(95, 111)

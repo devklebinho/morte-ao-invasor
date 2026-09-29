@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d03grei7sbkta"]
 
 [ext_resource type="Texture2D" uid="uid://dy12o7vyg7maf" path="res://Arts/Environments/quintal_dia.png" id="1_02b53"]
-[ext_resource type="Script" uid="uid://dgdd1c5vbx6hq" path="res://Scripts/Porta.gd" id="2_wxhsf"]
+[ext_resource type="Script" uid="uid://dgdd1c5vbx6hq" path="res://Scripts/Game/Porta.gd" id="2_wxhsf"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kvujk"]
 radius = 63.0

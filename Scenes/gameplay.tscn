@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://oq0d8wj6saw6"]
 
-[ext_resource type="PackedScene" uid="uid://o4t4nd82ywg0" path="res://Scenes/sala.tscn" id="1_kwrm5"]
-[ext_resource type="PackedScene" uid="uid://bodarsi28je2c" path="res://Scenes/cozinha.tscn" id="2_r8bcl"]
-[ext_resource type="PackedScene" uid="uid://6u8xrn7rh342" path="res://Prefabs/bodytest.tscn" id="4_kwrm5"]
-[ext_resource type="Script" uid="uid://bkch63badicg4" path="res://Scripts/bodytest.gd" id="5_r8bcl"]
-[ext_resource type="PackedScene" uid="uid://d03grei7sbkta" path="res://Scenes/quintal.tscn" id="6_1qnfl"]
-[ext_resource type="Script" uid="uid://batr08dasmn32" path="res://Scripts/camera_manager.gd" id="6_rlidi"]
+[ext_resource type="PackedScene" uid="uid://o4t4nd82ywg0" path="res://Scenes/Rooms/sala.tscn" id="1_kwrm5"]
+[ext_resource type="PackedScene" uid="uid://bodarsi28je2c" path="res://Scenes/Rooms/cozinha.tscn" id="2_r8bcl"]
+[ext_resource type="PackedScene" uid="uid://6u8xrn7rh342" path="res://Prefabs/Player.tscn" id="4_kwrm5"]
+[ext_resource type="Script" uid="uid://bkch63badicg4" path="res://Scripts/Player/Player.gd" id="5_r8bcl"]
+[ext_resource type="PackedScene" uid="uid://d03grei7sbkta" path="res://Scenes/Rooms/quintal.tscn" id="6_1qnfl"]
+[ext_resource type="Script" uid="uid://batr08dasmn32" path="res://Scripts/Game/camera_manager.gd" id="6_rlidi"]
 [ext_resource type="PackedScene" uid="uid://bcq6ft2884bi7" path="res://Prefabs/Martelo.tscn" id="7_1qnfl"]
 
 [node name="GameTESTE" type="Node2D" unique_id=1767757858]

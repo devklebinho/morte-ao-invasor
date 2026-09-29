@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c7h51raegvetx" path="res://Arts/Environments/bgcozinha.png" id="1_b1q5v"]
 [ext_resource type="Texture2D" uid="uid://uptaacohg14s" path="res://Arts/Environments/cozinha.png" id="2_tl1eq"]
-[ext_resource type="Script" uid="uid://dgdd1c5vbx6hq" path="res://Scripts/Porta.gd" id="3_tl1eq"]
+[ext_resource type="Script" uid="uid://dgdd1c5vbx6hq" path="res://Scripts/Game/Porta.gd" id="3_tl1eq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kvujk"]
 radius = 63.0

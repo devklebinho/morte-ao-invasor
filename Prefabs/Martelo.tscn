@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bcq6ft2884bi7"]
+
+[ext_resource type="Texture2D" uid="uid://ctru0h4l0d5tb" path="res://Arts/Props/martelo.png" id="1_ujkf8"]
+[ext_resource type="Script" uid="uid://db17tp32fr7xh" path="res://Scripts/Interactable.gd" id="2_0dvby"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kvujk"]
+size = Vector2(95, 111)
+
+[node name="Martelo" type="Area2D" unique_id=577488546]
+script = ExtResource("2_0dvby")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=576037204]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_kvujk")
+debug_color = Color(1, 0.28742558, 0.32831258, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=916218110]
+texture = ExtResource("1_ujkf8")

@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://bkch63badicg4" path="res://Scripts/bodytest.gd" id="5_r8bcl"]
 [ext_resource type="PackedScene" uid="uid://d03grei7sbkta" path="res://Scenes/quintal.tscn" id="6_1qnfl"]
 [ext_resource type="Script" uid="uid://batr08dasmn32" path="res://Scripts/camera_manager.gd" id="6_rlidi"]
+[ext_resource type="PackedScene" uid="uid://bcq6ft2884bi7" path="res://Prefabs/Martelo.tscn" id="7_1qnfl"]
 
 [node name="GameTESTE" type="Node2D" unique_id=1767757858]
 
@@ -56,3 +57,6 @@ position = Vector2(1564, 737)
 [node name="body_test" parent="." unique_id=901089597 instance=ExtResource("4_kwrm5")]
 position = Vector2(364, 759)
 script = ExtResource("5_r8bcl")
+
+[node name="Martelo" parent="." unique_id=577488546 instance=ExtResource("7_1qnfl")]
+position = Vector2(1280, 821)

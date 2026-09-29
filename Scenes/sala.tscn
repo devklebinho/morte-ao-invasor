@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://o4t4nd82ywg0"]
+
+[ext_resource type="Texture2D" uid="uid://dxbsoypd5cp2i" path="res://Arts/Environments/bgsala.png" id="1_35tbc"]
+[ext_resource type="Texture2D" uid="uid://dcrbdmngqa3nd" path="res://Arts/Environments/salamoveis-removebg-preview.png" id="2_2x4t4"]
+
+[node name="Sala" type="Node2D" unique_id=1203619176]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=977095981]
+texture = ExtResource("1_35tbc")
+centered = false
+
+[node name="SalamoveisRemovebgPreview" type="Sprite2D" parent="." unique_id=430327369]
+position = Vector2(962, 546)
+scale = Vector2(2.8913329, 2.8913333)
+texture = ExtResource("2_2x4t4")

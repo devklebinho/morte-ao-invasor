@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bodarsi28je2c"]
+
+[ext_resource type="Texture2D" uid="uid://c7h51raegvetx" path="res://Arts/Environments/bgcozinha.png" id="1_b1q5v"]
+[ext_resource type="Texture2D" uid="uid://uptaacohg14s" path="res://Arts/Environments/cozinha.png" id="2_tl1eq"]
+
+[node name="Cozinha" type="Node2D" unique_id=525947825]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1951921825]
+texture = ExtResource("1_b1q5v")
+centered = false
+
+[node name="Cozinha" type="Sprite2D" parent="." unique_id=1603029511]
+texture = ExtResource("2_tl1eq")
+centered = false

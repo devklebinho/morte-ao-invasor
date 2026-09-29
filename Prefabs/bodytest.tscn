@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://6u8xrn7rh342"]
 
-[ext_resource type="Texture2D" uid="uid://d0f8hblk5wb24" path="res://Arts/Animations/Player/walk_left/walk_left2.jpeg" id="1_ak7wf"]
+[ext_resource type="Texture2D" uid="uid://byi0sh0vob3fh" path="res://Arts/Animations/Player/walk_left/walk_left2.png" id="1_ak7wf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kvujk"]
 size = Vector2(76, 190)

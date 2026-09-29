@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1a8kyb7db8kg"
-path="res://.godot/imported/Cozinha_Cinza.png-129875198bd1e089c6179d4aa6953ac5.ctex"
+uid="uid://3unljqlvl2p1"
+path="res://.godot/imported/walk_right6.jpeg-438cb5c7b59863410eaac89e4015697f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arts/Cozinha_Cinza.png"
-dest_files=["res://.godot/imported/Cozinha_Cinza.png-129875198bd1e089c6179d4aa6953ac5.ctex"]
+source_file="res://Arts/Animations/Player/walk_right/walk_right6.jpeg"
+dest_files=["res://.godot/imported/walk_right6.jpeg-438cb5c7b59863410eaac89e4015697f.ctex"]
 
 [params]
 

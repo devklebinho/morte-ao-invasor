@@ -38,11 +38,9 @@ position = Vector2(-960, 540)
 position = Vector2(287, 927)
 scale = Vector2(2, 2)
 
-[node name="LeftDoorRoom" type="Area2D" parent="." unique_id=747200963 node_paths=PackedStringArray("pos_destino_player", "pos_destino_cam")]
+[node name="LeftDoorRoom" type="Area2D" parent="." unique_id=747200963]
 position = Vector2(141, 678)
 script = ExtResource("1_xdrvn")
-pos_destino_player = NodePath("../SpawnRightKitchen")
-pos_destino_cam = NodePath("../MarkerCamKitchen")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftDoorRoom" unique_id=1623928144]
 shape = SubResource("CapsuleShape2D_p41tx")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wtshepte0u7p"
-path="res://.godot/imported/sala.png-150447f86fd5ecde468a654f750898a3.ctex"
+uid="uid://d2a5bfwxu4bhh"
+path="res://.godot/imported/walk_left5.jpeg-464d48a9e94584ed7f0fe1671e934803.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arts/sala.png"
-dest_files=["res://.godot/imported/sala.png-150447f86fd5ecde468a654f750898a3.ctex"]
+source_file="res://Arts/Animations/Player/walk_left/walk_left5.jpeg"
+dest_files=["res://.godot/imported/walk_left5.jpeg-464d48a9e94584ed7f0fe1671e934803.ctex"]
 
 [params]
 

@@ -2,6 +2,14 @@
 
 [ext_resource type="Texture2D" uid="uid://byi0sh0vob3fh" path="res://Arts/Animations/Player/walk_left/walk_left2.png" id="1_ak7wf"]
 [ext_resource type="Script" uid="uid://b0heg32ut8kqd" path="res://Scripts/Player/PlayerInteractor.gd" id="2_2bo13"]
+[ext_resource type="Texture2D" uid="uid://cekogpdqunhd4" path="res://Arts/Animations/Player/Idle/idle1.png" id="3_vxq8l"]
+[ext_resource type="Texture2D" uid="uid://1o7wgy5m4nrw" path="res://Arts/Animations/Player/Idle/idle2.png" id="4_gg3t4"]
+[ext_resource type="Texture2D" uid="uid://bkk3nghr5beyb" path="res://Arts/Animations/Player/Idle/idle3.png" id="5_javds"]
+[ext_resource type="Texture2D" uid="uid://dthhhku2vsfa1" path="res://Arts/Animations/Player/walk_left/walk_left1.png" id="6_t8lmw"]
+[ext_resource type="Texture2D" uid="uid://bc3fogxjek1fw" path="res://Arts/Animations/Player/walk_left/walk_left3.png" id="7_k2qb3"]
+[ext_resource type="Texture2D" uid="uid://bmbdq5nbf5uco" path="res://Arts/Animations/Player/walk_left/walk_left4.png" id="8_wuv02"]
+[ext_resource type="Texture2D" uid="uid://db8ffj03hud6e" path="res://Arts/Animations/Player/walk_left/walk_left5.png" id="9_8afax"]
+[ext_resource type="Texture2D" uid="uid://dtdb7n4x500dy" path="res://Arts/Animations/Player/walk_left/walk_left6.png" id="10_t7w7j"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1dwwx"]
 radius = 36.0
@@ -10,10 +18,87 @@ height = 183.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b4uax"]
 size = Vector2(173.5, 181.5)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ygst"]
+atlas = ExtResource("3_vxq8l")
+region = Rect2(0, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhekp"]
+atlas = ExtResource("4_gg3t4")
+region = Rect2(0, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t8lmw"]
+atlas = ExtResource("5_javds")
+region = Rect2(0, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_08l6w"]
+atlas = ExtResource("6_t8lmw")
+region = Rect2(0, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o7xy3"]
+atlas = ExtResource("1_ak7wf")
+region = Rect2(0, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qm8rn"]
+atlas = ExtResource("7_k2qb3")
+region = Rect2(0, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aw6xh"]
+atlas = ExtResource("8_wuv02")
+region = Rect2(0, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkui5"]
+atlas = ExtResource("9_8afax")
+region = Rect2(0, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pg8dw"]
+atlas = ExtResource("10_t7w7j")
+region = Rect2(0, 0, 640, 640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ygst")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhekp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t8lmw")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_08l6w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o7xy3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qm8rn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aw6xh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkui5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pg8dw")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 5.0
+}]
+
 [node name="BodyTest" type="CharacterBody2D" unique_id=901089597 groups=["Player"]]
 scale = Vector2(2, 2)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1316691508]
+visible = false
 position = Vector2(-2.5, 4)
 scale = Vector2(0.36640626, 0.36640626)
 texture = ExtResource("1_ak7wf")
@@ -29,3 +114,11 @@ script = ExtResource("2_2bo13")
 position = Vector2(1.25, -2.25)
 shape = SubResource("RectangleShape2D_b4uax")
 debug_color = Color(0.94388545, 0, 0.15026754, 0.41960785)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1564757278]
+position = Vector2(-1.9073486e-06, -0.99999905)
+scale = Vector2(0.33164063, 0.33164063)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+animation = &"walk"
+autoplay = "idle"
+frame_progress = 0.48467946

@@ -15,6 +15,7 @@ var current_music: AudioStream = null
 func _ready():
 	# Cria o player de áudio dinamicamente
 	music_player = AudioStreamPlayer.new()
+	music_player.bus = "Master" 
 	add_child(music_player)
 
 

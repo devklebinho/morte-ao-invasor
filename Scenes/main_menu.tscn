@@ -4,6 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://dlprkmrn1vlq7" path="res://Arts/UI/Background.png" id="1_48xlc"]
 
 [sub_resource type="FontFile" id="FontFile_opfnp"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/variation_coordinates = {}
 cache/0/face_index = 0
 cache/0/embolden = 0.0

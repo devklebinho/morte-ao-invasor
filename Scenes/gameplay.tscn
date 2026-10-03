@@ -52,14 +52,13 @@ position = Vector2(1606, 780)
 position = Vector2(305, 780)
 
 [node name="Quintal" parent="." unique_id=1600706536 instance=ExtResource("6_1qnfl")]
-position = Vector2(-3832, -3)
+position = Vector2(-3845, -1)
 
 [node name="ROutsideSP" type="Marker2D" parent="Quintal" unique_id=1522533888]
 position = Vector2(1564, 780)
 
 [node name="Martelo" parent="." unique_id=577488546 instance=ExtResource("7_1qnfl")]
 position = Vector2(-958.00006, 687)
-rotation = -0.8870562
 
 [node name="Player" parent="." unique_id=901089597 instance=ExtResource("4_kwrm5")]
 position = Vector2(364, 780)

@@ -78,3 +78,12 @@ texture = ExtResource("9_puebw")
 position = Vector2(-691, 962)
 texture = ExtResource("10_5h7oy")
 flip_h = true
+
+[node name="Label" type="Label" parent="." unique_id=991343718]
+offset_left = -1052.0
+offset_top = 487.0
+offset_right = -788.0
+offset_bottom = 515.0
+theme_override_font_sizes/font_size = 26
+horizontal_alignment = 1
+vertical_alignment = 1

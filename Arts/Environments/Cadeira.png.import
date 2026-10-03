@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcrbdmngqa3nd"
-path="res://.godot/imported/salamoveis-removebg-preview.png-322072616ca83decb7dd93e00a038cbd.ctex"
+uid="uid://blopcuft875bw"
+path="res://.godot/imported/Cadeira.png-9997082f598cf3ff7231dec0bb0ea12a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arts/Environments/salamoveis-removebg-preview.png"
-dest_files=["res://.godot/imported/salamoveis-removebg-preview.png-322072616ca83decb7dd93e00a038cbd.ctex"]
+source_file="res://Arts/Environments/Cadeira.png"
+dest_files=["res://.godot/imported/Cadeira.png-9997082f598cf3ff7231dec0bb0ea12a.ctex"]
 
 [params]
 

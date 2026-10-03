@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wtshepte0u7p"
-path="res://.godot/imported/sala.png-c82fed9906c867cc564f3786ebb3ead8.ctex"
+uid="uid://uxaqlbstepiq"
+path="res://.godot/imported/mesa.png-21200f343fed83f32acb1e7ec618aa7a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arts/Environments/sala.png"
-dest_files=["res://.godot/imported/sala.png-c82fed9906c867cc564f3786ebb3ead8.ctex"]
+source_file="res://Arts/Environments/mesa.png"
+dest_files=["res://.godot/imported/mesa.png-21200f343fed83f32acb1e7ec618aa7a.ctex"]
 
 [params]
 

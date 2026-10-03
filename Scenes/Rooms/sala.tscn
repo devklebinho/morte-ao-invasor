@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://o4t4nd82ywg0"]
 
 [ext_resource type="Texture2D" uid="uid://dxbsoypd5cp2i" path="res://Arts/Environments/bgsala.png" id="1_35tbc"]
-[ext_resource type="Texture2D" uid="uid://dcrbdmngqa3nd" path="res://Arts/Environments/salamoveis-removebg-preview.png" id="2_2x4t4"]
+[ext_resource type="Texture2D" uid="uid://dav1l4forfxk4" path="res://Arts/Environments/salamoveis.png" id="2_g36jt"]
 [ext_resource type="Script" uid="uid://dgdd1c5vbx6hq" path="res://Scripts/Game/Porta.gd" id="3_vbwy0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uhgjh"]
@@ -14,10 +14,9 @@ height = 606.0
 texture = ExtResource("1_35tbc")
 centered = false
 
-[node name="SalamoveisRemovebgPreview" type="Sprite2D" parent="." unique_id=430327369]
+[node name="SalaMoveis" type="Sprite2D" parent="." unique_id=430327369]
 position = Vector2(962, 546)
-scale = Vector2(2.8913329, 2.8913333)
-texture = ExtResource("2_2x4t4")
+texture = ExtResource("2_g36jt")
 
 [node name="PortaEsquerda" type="Area2D" parent="." unique_id=756229302]
 position = Vector2(141, 678)

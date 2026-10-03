@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vat6jonh72u6"
-path="res://.godot/imported/sala_cinza.png-b5fbd8459d77720ac2b1e130c53c4d5e.ctex"
+uid="uid://dav1l4forfxk4"
+path="res://.godot/imported/salamoveis.png-1d204ab7ec59d97ec7c05e828c585108.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arts/Environments/sala_cinza.png"
-dest_files=["res://.godot/imported/sala_cinza.png-b5fbd8459d77720ac2b1e130c53c4d5e.ctex"]
+source_file="res://Arts/Environments/salamoveis.png"
+dest_files=["res://.godot/imported/salamoveis.png-1d204ab7ec59d97ec7c05e828c585108.ctex"]
 
 [params]
 

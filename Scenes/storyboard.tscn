@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bqhwvkons4n1c"]
+
+[ext_resource type="Texture2D" uid="uid://4xcfpvkx083g" path="res://Arts/UI/StoryboardFinal.png" id="1_160jv"]
+
+[node name="Storyboard" type="Node2D" unique_id=448509746]
+
+[node name="Blackbg" type="Sprite2D" parent="." unique_id=978753489]
+
+[node name="Soryboard" type="Sprite2D" parent="." unique_id=1573227313]
+position = Vector2(966, 2210.0002)
+scale = Vector2(0.948052, 0.94805187)
+texture = ExtResource("1_160jv")

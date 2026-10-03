@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bqhwvkons4n1c"]
 
 [ext_resource type="Texture2D" uid="uid://4xcfpvkx083g" path="res://Arts/UI/StoryboardFinal.png" id="1_160jv"]
+[ext_resource type="Texture2D" uid="uid://de4tab5bg6wm1" path="res://Arts/UI/Quadro5.png" id="2_g5rqm"]
 
 [node name="Storyboard" type="Node2D" unique_id=448509746]
 
@@ -10,3 +11,7 @@
 position = Vector2(966, 2210.0002)
 scale = Vector2(0.948052, 0.94805187)
 texture = ExtResource("1_160jv")
+
+[node name="Quadro5" type="Sprite2D" parent="." unique_id=228171529]
+position = Vector2(2531, 4195)
+texture = ExtResource("2_g5rqm")

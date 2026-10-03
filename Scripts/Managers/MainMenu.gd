@@ -10,9 +10,8 @@ func _on_options_pressed() -> void:
 		get_tree().change_scene_to_file("res://Scenes/Options.tscn")
 
 func _on_credits_pressed() -> void:
-	#get_tree().change_scene_to_file("res://Scenes/Credits.tscn")
-	print("Imagine Credits here! It will be implemented after")
-	pass # Replace with function body.
-
+	var link_itchio = "https://devklebinho.itch.io/morte-ao-invasor"
+	OS.shell_open(link_itchio)
+	
 func _on_quit_pressed() -> void:
 	get_tree().quit()

@@ -2,6 +2,9 @@ Obrigado por experimentar nosso jogo! 😉
 
 =========================== CRÉDITOS ==========================
 
+AUTOR DO TEXTO DE INSPIRAÇÃO:
+[Gilvan LemoS](https://pt.wikipedia.org/wiki/Gilvan_Lemos)
+
 PRODUÇÃO:
 Kleber [devklebinho](https://devklebinho.itch.io/)
 

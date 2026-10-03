@@ -9,6 +9,8 @@ size = Vector2(123, 79)
 
 [node name="Martelo" type="Area2D" unique_id=577488546]
 script = ExtResource("2_0dvby")
+prompt_text = "E"
+item_name = "Martelo"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=576037204]
 position = Vector2(14.5, -7.5)

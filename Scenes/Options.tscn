@@ -1,10 +1,9 @@
 [gd_scene format=3 uid="uid://rie22ym1yjou"]
 
-[ext_resource type="Script" uid="uid://ca5ora2n52wi8" path="res://Scripts/options.gd" id="1_qqnya"]
-[ext_resource type="AudioStream" uid="uid://cyhn78pp8ecml" path="res://Audio/falling-in-reverse-joseph-epitaph-records-youtube_zEgPKeDv.mp3" id="2_hg628"]
-[ext_resource type="Script" uid="uid://bv4r33ila3w2l" path="res://Scripts/audio_controle.gd" id="3_5hy3q"]
-[ext_resource type="Script" uid="uid://btipn8m1x561y" path="res://Scripts/check_button.gd" id="4_cbhj7"]
-[ext_resource type="Script" uid="uid://tddmq12cx8br" path="res://Scenes/controle_escala.gd" id="5_q4at1"]
+[ext_resource type="Script" uid="uid://ca5ora2n52wi8" path="res://Scripts/Managers/options.gd" id="1_qqnya"]
+[ext_resource type="Script" uid="uid://bv4r33ila3w2l" path="res://Scripts/Managers/audio_controle.gd" id="3_5hy3q"]
+[ext_resource type="Script" uid="uid://btipn8m1x561y" path="res://Scripts/Managers/check_button.gd" id="4_cbhj7"]
+[ext_resource type="Script" uid="uid://tddmq12cx8br" path="res://Scripts/Managers/controle_escala.gd" id="5_q4at1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yf5fn"]
 bg_color = Color(0.2585664, 0.2585664, 0.25856635, 1)
@@ -68,10 +67,6 @@ grow_vertical = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_yf5fn")
 text = "VOLTAR"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Opcoes" unique_id=1208823042]
-stream = ExtResource("2_hg628")
-autoplay = true
-
 [node name="AudioControle" type="HSlider" parent="Opcoes" unique_id=398663024]
 layout_mode = 0
 offset_left = 99.5
@@ -85,7 +80,7 @@ max_value = 1.0
 step = 0.05
 value = 1.0
 script = ExtResource("3_5hy3q")
-audio_bus_name = "Musica"
+audio_bus_name = "Music"
 
 [node name="CheckButton" type="CheckButton" parent="Opcoes" unique_id=971926048]
 layout_mode = 0

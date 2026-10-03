@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dolb8idiuqi30"]
 
 [ext_resource type="Script" uid="uid://cn5qbkc4bahth" path="res://Scripts/Managers/MainMenu.gd" id="1_28flt"]
-[ext_resource type="Texture2D" uid="uid://dlprkmrn1vlq7" path="res://Arts/UI/Background.png" id="1_48xlc"]
+[ext_resource type="Texture2D" uid="uid://dw3injajp5bf4" path="res://Arts/UI/Capa do MENU.png" id="1_48xlc"]
 
 [sub_resource type="FontFile" id="FontFile_opfnp"]
 subpixel_positioning = 0
@@ -34,6 +34,7 @@ texture = ExtResource("1_48xlc")
 centered = false
 
 [node name="Title" type="Label" parent="." unique_id=1258612795]
+visible = false
 offset_left = 254.0
 offset_top = 123.00006
 offset_right = 1722.0
@@ -47,10 +48,10 @@ horizontal_alignment = 1
 [node name="ButtonManager" type="Control" parent="." unique_id=583084044]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 842.0
-offset_top = 438.0
-offset_right = 877.0
-offset_bottom = 475.0
+offset_left = 1257.0
+offset_top = 428.0
+offset_right = 1292.0
+offset_bottom = 465.0
 script = ExtResource("1_28flt")
 
 [node name="Start" type="Button" parent="ButtonManager" unique_id=1011434973]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bx8pnkh2proc"
-path="res://.godot/imported/Personagens.jpeg-fb8d5518ebaa8de13c6892f73e234fd2.ctex"
+uid="uid://unpay5ha3uam"
+path="res://.godot/imported/Inimigo.png-fffe1969f7b9cf5b03463a7ba2a8c2ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arts/Sprites/Personagens.jpeg"
-dest_files=["res://.godot/imported/Personagens.jpeg-fb8d5518ebaa8de13c6892f73e234fd2.ctex"]
+source_file="res://Arts/Animations/Inimigo.png"
+dest_files=["res://.godot/imported/Inimigo.png-fffe1969f7b9cf5b03463a7ba2a8c2ef.ctex"]
 
 [params]
 
